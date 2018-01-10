@@ -61,6 +61,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Our project portfolio',
+    pageMessage: ' A fine selection of our finest blends!'
+  })
+});
+
 app.get('/maintenance', (req, res) => {
   res.render('maintenance.hbs', {
     pageTitle: 'Website under maintenance',
